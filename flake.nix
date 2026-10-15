@@ -37,7 +37,7 @@
           makeWrapper ${lib}/bin/lib "$out/bin/bot" \
                       --run "cd \"$out/bin\""
           '';
-        };x
+        };
 
         devShells.default = lib.env;
       });
