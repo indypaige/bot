@@ -12,7 +12,7 @@
       let
         pkgs = import nixpkgs { inherit system; };
 
-        lib  = qik.lib.${system}.haskell.mk {
+        lib' = qik.lib.${system}.haskell.mk {
           tool = pkgs: with pkgs; [ zlib ];
           name = "lib";
           root = ./.;
@@ -87,6 +87,6 @@
           '';
         };
 
-        devShells.default = lib.env;
+        devShells.default = lib'.env;
       });
 }
