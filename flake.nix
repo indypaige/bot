@@ -62,7 +62,7 @@
                   , footerText  ? ""
                   , description
                   }: {
-                    inherit authorName authorUrl title fields footerText description;
+                    inherit authorName authorUrl title fields footerText description url;
                   };
         };
 
