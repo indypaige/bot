@@ -1,0 +1,105 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.38.3.
+--
+-- see: https://github.com/sol/hpack
+
+name:           lib
+version:        0.0.0
+build-type:     Simple
+
+library
+  exposed-modules:
+      Lib
+  hs-source-dirs:
+      src
+  default-extensions:
+      GeneralizedNewtypeDeriving
+      UndecidableSuperClasses
+      TypeFamilyDependencies
+      FunctionalDependencies
+      MultiParamTypeClasses
+      UndecidableInstances
+      ScopedTypeVariables
+      StandaloneDeriving
+      OverloadedStrings
+      FlexibleInstances
+      TypeApplications
+      FlexibleContexts
+      RecordWildCards
+      PatternSynonyms
+      ConstraintKinds
+      TemplateHaskell
+      DeriveAnyClass
+      KindSignatures
+      NamedFieldPuns
+      TypeOperators
+      DeriveGeneric
+      TupleSections
+      TypeFamilies
+      LambdaCase
+      RankNTypes
+      PolyKinds
+      DataKinds
+      Arrows
+      GADTs
+  build-depends:
+      aeson
+    , base
+    , bytestring
+    , containers
+    , discord-haskell
+    , effectful
+    , effectful-th
+    , lens
+    , lens-aeson
+    , mtl
+    , text
+  default-language: Haskell2010
+
+executable lib
+  main-is: app/Main.hs
+  default-extensions:
+      GeneralizedNewtypeDeriving
+      UndecidableSuperClasses
+      TypeFamilyDependencies
+      FunctionalDependencies
+      MultiParamTypeClasses
+      UndecidableInstances
+      ScopedTypeVariables
+      StandaloneDeriving
+      OverloadedStrings
+      FlexibleInstances
+      TypeApplications
+      FlexibleContexts
+      RecordWildCards
+      PatternSynonyms
+      ConstraintKinds
+      TemplateHaskell
+      DeriveAnyClass
+      KindSignatures
+      NamedFieldPuns
+      TypeOperators
+      DeriveGeneric
+      TupleSections
+      TypeFamilies
+      LambdaCase
+      RankNTypes
+      PolyKinds
+      DataKinds
+      Arrows
+      GADTs
+  build-depends:
+      aeson
+    , base
+    , bytestring
+    , containers
+    , discord-haskell
+    , effectful
+    , effectful-th
+    , lens
+    , lens-aeson
+    , lib
+    , mtl
+    , text
+  default-language: Haskell2010
