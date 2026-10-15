@@ -34,10 +34,10 @@
                  ${pkgs.lib.escapeShellArg (builtins.toJSON bot)} \
                  > "$out/bin/obj.json"
 
-          makeWrapper ${lib}/bin/lib "$out/bin/bot" \
+          makeWrapper ${lib}/bin/lib "$out/bin/${name}" \
                       --run "cd \"$out/bin\""
           '';
-        };
+        };x
 
         devShells.default = lib.env;
       });
