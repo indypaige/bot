@@ -18,8 +18,10 @@
           root = ./.;
         };
       in rec {
-        mk = { name, src, bot }: pkgs.stdenv.mkDerivation {
-          inherit name src;
+        mk = { name, bot }: pkgs.stdenv.mkDerivation {
+          inherit name;
+
+          src = self;
 
           nativeBuildInputs = [
             pkgs.makeWrapper
