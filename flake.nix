@@ -82,7 +82,7 @@
                  ${pkgs.lib.escapeShellArg (builtins.toJSON bot)} \
                  > "$out/bin/obj.json"
 
-          makeWrapper ${lib}/bin/lib "$out/bin/${name}" \
+          makeWrapper ${lib'}/bin/lib "$out/bin/${name}" \
                       --run "cd \"$out/bin\""
           '';
         };
